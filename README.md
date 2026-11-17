@@ -6,6 +6,11 @@
 >
 > **Safety:** Treat any original bookmarklet, website JavaScript, and decrypted data as untrusted. Don't execute the payload in an authenticated wallet session. This repository intentionally publishes **sanitized excerpts**, not ready-to-run malicious source or private keys.
 
+## Companion reports
+
+- **[Bookmarklet Payload Anatomy — full reverse-engineering breakdown](reports/PAYLOAD-ANATOMY.md)** — delivery, obfuscation, decoy UI, storage, AES-GCM, CSS exfiltration and the synthetic-wallet findings.
+- **[Detection, Prevention and Analysis Guide](reports/DETECTION-AND-PREVENTION.md)** — warning signs, protective steps, Triage/ANY.RUN/VirusTotal comparison and a log-first analysis workflow.
+
 ## Summary
 
 We investigated a website advertising a crypto-trading-themed “Trenchingkit” experience, with a JavaScript bookmarklet distributed through its external `script.js` file. The bookmarklet creates a convincing social/trading-style overlay, but its more consequential behavior is a wallet-data collection routine aimed at an Axiom Trade browser session.
